@@ -435,7 +435,56 @@ span{
     width: 320px;
     height: 114px;
 }
+#gooey2{
+    height: 35vw;
+    width: 70vw;
+    position: absolute;
+    border-radius: 50%;
+    background:linear-gradient(to top right,#fe320a,#ff5900) ;
+    top: 0%;
+    left: -6%;
+    filter: blur(20px);
+    /* z-index: 6; */
+    animation-name: gooey2;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
 
+
+@keyframes gooey2 {
+    from{
+        transform: translate(5%,-5%);
+    }
+    to{
+        transform: translate(-10%,5%);
+    }
+}
+#gooey3{
+    height: 45vw;
+    width: 80vw;
+    position: absolute;
+    border-radius: 50%;
+    background:linear-gradient(to top right,#fe320a,#ff5900) ;
+    top: 0%;
+    left: 50%;
+    filter: blur(20px);
+    /* z-index: 6; */
+    animation-name: gooey3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+@keyframes gooey3 {
+    from{
+        transform: translate(0%,5%);
+    }
+    to{
+        transform: translate(-20%,5%);
+    }
+}
 #page4{
   height: 70vh;
   width: 100%;
@@ -495,12 +544,13 @@ span{
 }
 #footer h1{
     font-size: 22vw;
+    z-index: 9;
 }
 #footer-top{
     height: 20vh;
     width: 100%;
     border-radius: 10px;
-    background:linear-gradient(to right,rgb(255, 42, 0),orangered);
+    /* background:linear-gradient(to right,rgb(255, 42, 0),orangered); */
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
